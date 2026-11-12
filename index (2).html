@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JM Produtora | Seu comercial no programa Janssen Machado</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--bg2:#0b0b0b;--ink:#fff;--mute:#a0a0a0;--line:#2a2a2a;color-scheme:dark;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--ink:#fff}}
+:root[data-theme="dark"]{--bg:#000;--ink:#fff}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.65 Barlow,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Barlow Condensed",Impact,sans-serif;font-weight:700;text-transform:uppercase;line-height:1;letter-spacing:.02em}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;opacity:.06;z-index:60;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence baseFrequency='.9' numOctaves='2'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>")}
+header{position:fixed;top:0;left:0;right:0;z-index:30;background:rgba(0,0,0,.82);backdrop-filter:blur(12px);padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo svg{width:48px;height:36px}
+.logo b{display:block;font:700 28px/1 "Barlow Condensed";letter-spacing:.06em}
+.logo small{display:block;font:500 10.5px/1 Barlow;letter-spacing:.44em;color:var(--mute);margin-top:3px}
+nav{display:flex;gap:28px;font-weight:500;font-size:15px;color:var(--mute)}
+nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#fff;color:#000;font:600 16px Barlow,sans-serif;padding:14px 28px;border:1.5px solid #fff;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:#000;color:#fff}
+.btn.ghost{background:transparent;color:#fff}
+.btn.ghost:hover{background:#fff;color:#000}
+.btn svg{width:20px;height:20px;fill:currentColor}
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:90px 0 50px;overflow:hidden;background:radial-gradient(50% 60% at 68% 45%,#2c2c2c 0%,#000 75%)}
+.hero .wrap{display:grid;grid-template-columns:.95fr 1.25fr;gap:0;align-items:center;width:100%}
+.hero h1{font-size:clamp(66px,10vw,150px);line-height:.88}
+.hero h1 span{display:block;font-size:.34em;letter-spacing:.32em;color:var(--mute);margin-top:14px}
+.hero p{max-width:460px;color:var(--mute);margin:24px 0 30px;font-size:19px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+#stage{position:relative;height:min(84vh,720px);cursor:pointer}
+#stage canvas{width:100%!important;height:100%!important;display:block}
+.vf{position:absolute;inset:14px;pointer-events:none;font:600 12px Barlow;letter-spacing:.14em}
+.vf i{position:absolute;width:26px;height:26px;border:2px solid rgba(255,255,255,.8)}
+.vf i:nth-child(1){top:0;left:0;border-right:0;border-bottom:0}.vf i:nth-child(2){top:0;right:0;border-left:0;border-bottom:0}
+.vf i:nth-child(3){bottom:0;left:0;border-right:0;border-top:0}.vf i:nth-child(4){bottom:0;right:0;border-left:0;border-top:0}
+.vf .r{position:absolute;top:8px;left:38px;display:flex;gap:8px;align-items:center}
+.vf .r u{width:10px;height:10px;border-radius:50%;background:#e02020;animation:b 1s steps(2) infinite}
+.vf .tc{position:absolute;top:8px;right:38px}
+.vf .h{position:absolute;bottom:8px;left:38px;color:var(--mute)}
+@keyframes b{50%{opacity:.15}}
+#acao{position:absolute;inset:0;display:grid;place-items:center;font:700 clamp(80px,14vw,200px) "Barlow Condensed";letter-spacing:.06em;opacity:0;pointer-events:none}
+#acao.go{animation:ac 1s ease-out}
+@keyframes ac{0%{opacity:0;transform:scale(.7)}18%{opacity:1;transform:scale(1)}65%{opacity:1}100%{opacity:0;transform:scale(1.15)}}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none}
+#flash.go{animation:fl .35s ease-out}
+@keyframes fl{0%{opacity:.55}100%{opacity:0}}
+.bar{position:absolute;left:0;right:0;height:4.5vh;background:#000;z-index:2}
+.mq{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:16px 0;background:#000}
+.mq div{display:inline-block;animation:m 34s linear infinite;font:600 22px "Barlow Condensed";letter-spacing:.2em;color:var(--mute);text-transform:uppercase}
+@keyframes m{to{transform:translateX(-50%)}}
+section{padding:104px 0}
+.head{max-width:700px;margin-bottom:48px}
+.head h2{font-size:clamp(42px,5.6vw,76px)}
+.head p{color:var(--mute);margin-top:14px}
+/* SERVIÇOS COM FOTO */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:18px}
+.card{position:relative;aspect-ratio:3/4.1;overflow:hidden;background:#111;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:flex-end;isolation:isolate}
+.card canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1;transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .5s;filter:grayscale(1) contrast(1.05)}
+.card::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(0deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.25) 55%,transparent 100%)}
+.card:hover canvas{transform:scale(1.07)}
+.card div{position:relative;z-index:1;padding:26px 24px}
+.card h3{font-size:38px;margin-bottom:8px}
+.card p{color:#cfcfcf;font-size:15.5px}
+.alt{background:var(--bg2);border-block:1px solid var(--line)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.split h2{font-size:clamp(38px,4.8vw,64px);margin-bottom:18px}
+.split p{color:var(--mute);margin-bottom:12px}
+.tvbox{aspect-ratio:16/9;border:10px solid #1a1a1a;outline:1px solid #444;background:linear-gradient(135deg,#2e2e2e,#050505);position:relative;display:grid;place-items:center;box-shadow:0 40px 70px rgba(0,0,0,.7);transform:perspective(1000px) rotateY(-9deg)}
+.tvbox b{font:700 clamp(30px,4vw,56px) "Barlow Condensed";text-transform:uppercase;text-align:center;line-height:1}
+.tvbox small{position:absolute;bottom:10px;right:14px;letter-spacing:.14em;font-weight:600;font-size:12px;color:var(--mute)}
+.tvbox em{position:absolute;top:10px;left:14px;font-style:normal;font-weight:600;font-size:12px;letter-spacing:.14em;border:1px solid #fff;padding:1px 9px}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.plan{position:relative;border:1px solid var(--line);padding:38px 28px;display:flex;flex-direction:column;background:#050505;transition:transform .15s}
+.plan.top{border:2px solid #fff;background:#fff;color:#000}
+.plan.top li{border-color:#ccc;color:#000}.plan.top .price small{color:#555}
+.plan.top .btn{background:#000;color:#fff;border-color:#000}
+.tag{position:absolute;top:-13px;left:24px;background:#000;color:#fff;border:1px solid #fff;font-weight:600;font-size:12px;letter-spacing:.14em;padding:2px 12px}
+.plan h3{font-size:32px}
+.price{font:700 66px "Barlow Condensed";margin:12px 0 0;line-height:1}
+.price small{display:block;font:400 15px Barlow;color:var(--mute);margin-top:4px}
+.plan ul{list-style:none;padding:0;margin:20px 0 28px;flex:1}
+.plan li{padding:10px 0;border-top:1px solid var(--line);font-size:16px}
+.pay{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.pay div{border:1px solid var(--line);padding:30px 26px}
+.pay h3{font-size:36px;margin-bottom:8px}
+.pay p{color:var(--mute);font-size:16px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:28px;counter-reset:s}
+.steps div{border-top:2px solid #fff;padding-top:14px;counter-increment:s}
+.steps div::before{content:counter(s);font:700 40px "Barlow Condensed";color:var(--mute)}
+.steps h3{font-size:28px;margin:2px 0 6px}
+.steps p{color:var(--mute);font-size:15.5px}
+.contact{display:flex;gap:14px;flex-wrap:wrap;margin:26px 0 38px}
+form{display:grid;gap:14px;max-width:560px}
+label{font-size:14px;color:var(--mute)}
+input,select,textarea{width:100%;background:#000;border:1px solid #444;color:#fff;padding:14px;font:400 16px Barlow,sans-serif;border-radius:0}
+footer{border-top:1px solid var(--line);padding:34px 0;color:var(--mute);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40;width:58px;height:58px;border-radius:50%;background:#fff;color:#000;display:grid;place-items:center;box-shadow:0 8px 30px rgba(255,255,255,.2)}
+.fab svg{width:28px;height:28px;fill:currentColor}
+#cur{position:fixed;left:0;top:0;width:34px;height:34px;border:1.5px solid #fff;border-radius:50%;pointer-events:none;z-index:70;mix-blend-mode:difference;transition:width .2s,height .2s;display:none}
+@media(hover:hover) and (pointer:fine){#cur{display:block}}
+@media(max-width:860px){nav{display:none}.hero .wrap,.split{grid-template-columns:1fr}#stage{height:56vh}.tvbox{transform:none}section{padding:72px 0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="cur"></div>
+<header><div class="wrap">
+<a class="logo" href="#topo" aria-label="JM Produtora">
+<svg viewBox="0 0 64 46" fill="none" stroke="#fff" stroke-width="2.2" aria-hidden="true"><rect x="2" y="14" width="36" height="28" rx="3"/><rect x="9" y="6" width="22" height="8" rx="2"/><path d="M38 22l9-5h12v22H47l-9-5z" fill="#fff"/><circle cx="20" cy="28" r="8"/><circle cx="20" cy="28" r="2.6" fill="#fff"/></svg>
+<span><b>JM</b><small>PRODUTORA</small></span></a>
+<nav><a href="#servicos">O que filmamos</a><a href="#tv">Na TV</a><a href="#planos">Planos</a><a href="#pagamento">Pagamento</a><a href="#contato">Contato</a></nav>
+<a class="btn" href="#contato" style="padding:10px 20px;font-size:15px">Orçamento</a>
+</div></header>
+
+<main id="topo">
+<div class="hero">
+<div class="bar" style="top:0"></div><div class="bar" style="bottom:0"></div>
+<div class="wrap">
+<div>
+<h1>JM<br>Produtora<span>CINEMA PARA SUA MARCA</span></h1>
+<p>Filmamos com câmera de cinema e colocamos o seu comercial no programa Janssen Machado, na rede SBT.</p>
+<div class="cta"><a class="btn" href="#planos">Ver planos de TV</a><a class="btn ghost" id="zap1" href="#" target="_blank" rel="noopener">Falar no WhatsApp</a></div>
+</div>
+<div id="stage" role="img" aria-label="Câmera de cinema profissional em 3D e claquete">
+<div class="vf"><i></i><i></i><i></i><i></i><div class="r"><u></u>REC 4K</div><div class="tc" id="tc">00:00:00:00</div><div class="h">Clique na claquete ou arraste a câmera</div></div>
+<div id="flash"></div><div id="acao">AÇÃO!</div>
+</div>
+</div>
+</div>
+
+<div class="mq" aria-hidden="true"><div>Comerciais para TV &nbsp;·&nbsp; Casamentos &nbsp;·&nbsp; Festas de 15 anos &nbsp;·&nbsp; Empresas &nbsp;·&nbsp; Datas comemorativas &nbsp;·&nbsp; SBT &nbsp;·&nbsp; Janssen Machado &nbsp;·&nbsp; Comerciais para TV &nbsp;·&nbsp; Casamentos &nbsp;·&nbsp; Festas de 15 anos &nbsp;·&nbsp; Empresas &nbsp;·&nbsp; Datas comemorativas &nbsp;·&nbsp; SBT &nbsp;·&nbsp; Janssen Machado &nbsp;·&nbsp;</div></div>
+
+<section id="servicos"><div class="wrap">
+<div class="head"><h2>O que filmamos</h2><p>Imagem de cinema para a sua empresa e para os dias que sua família nunca vai esquecer.</p></div>
+<div class="cards">
+<article class="card"><canvas data-k="empresas" aria-label="Cena cinematográfica de empresa"></canvas><div><h3>Empresas</h3><p>Comercial para TV, vídeo institucional, produtos e serviços.</p></div></article>
+<article class="card"><canvas data-k="casamento" aria-label="Cena cinematográfica de casamento"></canvas><div><h3>Casamento</h3><p>Do making of ao último brinde, com câmera em movimento e áudio limpo.</p></div></article>
+<article class="card"><canvas data-k="quinze" aria-label="Cena cinematográfica de festa de 15 anos"></canvas><div><h3>Festa de 15 anos</h3><p>Cerimônia, valsa, bastidores e festa em um filme emocionante.</p></div></article>
+<article class="card"><canvas data-k="datas" aria-label="Cena cinematográfica de comemoração"></canvas><div><h3>Datas comemorativas</h3><p>Aniversários, formaturas, inaugurações e aniversário de empresa.</p></div></article>
+</div></div></section>
+
+<section class="alt" id="tv"><div class="wrap split">
+<div>
+<h2>Seu comercial no programa Janssen Machado</h2>
+<p>Você paga por um tempo dentro do programa e ele passa a ser da sua empresa. Nós gravamos, editamos e levamos o material para o ar na rede SBT.</p>
+<p>Escolha só o comercial, o comercial com um take do apresentador, ou o pacote completo com o apresentador usando seu produto.</p>
+<a class="btn" href="#planos" style="margin-top:14px">Escolher meu pacote</a>
+</div>
+<div class="tvbox" aria-hidden="true"><em>NO AR</em><b>Sua empresa<br>aqui</b><small>SBT · JANSSEN MACHADO</small></div>
+</div></section>
+
+<section id="planos"><div class="wrap">
+<div class="head"><h2>Planos para aparecer na TV</h2><p>Valor por tempo no programa, com a filmagem do comercial incluída.</p></div>
+<div class="plans">
+<div class="plan"><h3>Comercial</h3><div class="price">R$ 6.000<small>tempo no programa</small></div>
+<ul><li>Comercial da sua empresa no programa</li><li>Filmagem com câmera de cinema</li><li>Edição e trilha</li><li>Cópia do vídeo para suas redes</li></ul><a class="btn ghost" href="#contato" data-plan="Comercial (R$ 6.000)">Quero este</a></div>
+<div class="plan top"><span class="tag">MAIS ESCOLHIDO</span><h3>Comercial + apresentador</h3><div class="price">R$ 8.000<small>tempo no programa</small></div>
+<ul><li>Tudo do plano Comercial</li><li>Take do apresentador falando da sua empresa</li><li>Mais confiança e alcance</li><li>Cópia do vídeo para suas redes</li></ul><a class="btn" href="#contato" data-plan="Comercial + apresentador (R$ 8.000)">Quero este</a></div>
+<div class="plan"><h3>Completo</h3><div class="price">R$ 12.000<small>tempo no programa</small></div>
+<ul><li>Tudo do plano anterior</li><li>Apresentador usando seu produto ou serviço</li><li>Cena de ação em destaque</li><li>Cópia do vídeo para suas redes</li></ul><a class="btn ghost" href="#contato" data-plan="Completo (R$ 12.000)">Quero este</a></div>
+</div></div></section>
+
+<section class="alt" id="pagamento"><div class="wrap">
+<div class="head"><h2>Formas de pagamento</h2><p>Escolha o que for melhor para sua empresa.</p></div>
+<div class="pay">
+<div><h3>Pix</h3><p>Pagamento rápido e sem taxa. Enviamos a chave Pix pelo WhatsApp quando você fechar o pacote.</p></div>
+<div><h3>Cartão</h3><p>Pague no cartão de crédito. Combinamos as condições de parcelamento no seu orçamento.</p></div>
+</div></div></section>
+
+<section><div class="wrap">
+<div class="head"><h2>Como funciona</h2></div>
+<div class="steps">
+<div><h3>Conversa</h3><p>Você conta sobre a empresa e escolhe o plano.</p></div>
+<div><h3>Roteiro</h3><p>Criamos a ideia e o texto do seu comercial.</p></div>
+<div><h3>Filmagem</h3><p>Gravamos com câmera de cinema e cenas de ação.</p></div>
+<div><h3>No ar</h3><p>Seu comercial entra no programa Janssen Machado.</p></div>
+</div></div></section>
+
+<section class="alt" id="contato"><div class="wrap">
+<div class="head" style="margin-bottom:0"><h2>Vamos filmar?</h2><p>Chame a gente no WhatsApp ou siga a JM Produtora no Instagram.</p></div>
+<div class="contact">
+<a class="btn" id="zap2" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.300 1.200-1.800 1.200-.5.1-1 .2-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.200.1.400 0 .5l-.4.600-.3.300c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2 1.300 2.300 1.400.3.100.4.100.6-.1l.8-1c.2-.3.400-.2.600-.1l1.900.9c.3.100.5.200.5.300.1.200.1.800-.1 1.400z"/></svg>WhatsApp</a>
+<a class="btn ghost" href="https://www.instagram.com/jmprodutoraoficial" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.500a4.500 4.500 0 1 1 0 9 4.500 4.500 0 0 1 0-9zm0 2a2.500 2.500 0 1 0 0 5 2.500 2.500 0 0 0 0-5zM17.300 5.700a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>@jmprodutoraoficial</a>
+</div>
+<form id="f">
+<div><label for="n">Seu nome ou da empresa</label><input id="n" required></div>
+<div><label for="s">O que você quer filmar?</label>
+<select id="s"><option>Comercial (R$ 6.000)</option><option>Comercial + apresentador (R$ 8.000)</option><option>Completo (R$ 12.000)</option><option>Festa de 15 anos</option><option>Casamento</option><option>Data comemorativa</option></select></div>
+<div><label for="p">Forma de pagamento</label><select id="p"><option>Pix</option><option>Cartão</option></select></div>
+<div><label for="m">Conte um pouco</label><textarea id="m" rows="3"></textarea></div>
+<button class="btn" type="submit">Enviar pelo WhatsApp</button>
+</form></div></section>
+</main>
+
+<a class="fab" id="zap3" href="#" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.300 1.200-1.800 1.200-.5.1-1 .2-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.200.1.400 0 .5l-.4.600-.3.300c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2 1.300 2.300 1.400.3.100.4.100.6-.1l.8-1c.2-.3.400-.2.600-.1l1.900.9c.3.100.5.200.5.300.1.200.1.800-.1 1.400z"/></svg></a>
+<footer><div class="wrap"><span>© 2026 JM Produtora · Instagram @jmprodutoraoficial</span><span>Comerciais, casamentos, 15 anos e eventos.</span></div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+var ZAP='5565999999999'; // troque: 55 + DDD + número
+['zap1','zap2','zap3'].forEach(function(i){document.getElementById(i).href='https://wa.me/'+ZAP+'?text='+encodeURIComponent('Olá, JM Produtora! Quero um orçamento.')});
+/* ===== FOTOS CINEMATOGRÁFICAS (geradas) ===== */
+function paint(cv){
+var k=cv.dataset.k,w=cv.width=720,h=cv.height=980,x=cv.getContext('2d'),s=k.length*7919;
+function r(){s=(s*9301+49297)%233280;return s/233280}
+var g=x.createLinearGradient(0,0,0,h);g.addColorStop(0,'#3a3a3a');g.addColorStop(.6,'#151515');g.addColorStop(1,'#030303');x.fillStyle=g;x.fillRect(0,0,w,h);
+function bok(n,y0,y1,a,m){for(var i=0;i<n;i++){var px=r()*w,py=y0+r()*(y1-y0),rd=10+r()*m,q=x.createRadialGradient(px,py,0,px,py,rd);q.addColorStop(0,'rgba(255,255,255,'+a*.5+')');q.addColorStop(.8,'rgba(255,255,255,'+a+')');q.addColorStop(1,'rgba(255,255,255,0)');x.fillStyle=q;x.beginPath();x.arc(px,py,rd,0,6.283);x.fill()}}
+function glow(cx,cy,rd,a){var q=x.createRadialGradient(cx,cy,0,cx,cy,rd);q.addColorStop(0,'rgba(255,255,255,'+a+')');q.addColorStop(1,'rgba(255,255,255,0)');x.fillStyle=q;x.fillRect(0,0,w,h)}
+function person(cx,b,hh,gown){x.fillStyle='#000';x.beginPath();x.arc(cx,b-hh,hh*.065,0,6.283);x.fill();
+x.beginPath();x.moveTo(cx-hh*.12,b-hh*.9);x.lineTo(cx+hh*.12,b-hh*.9);x.lineTo(cx+hh*.1,b-hh*.55);
+if(gown){x.lineTo(cx+hh*.42,b);x.lineTo(cx-hh*.42,b)}else{x.lineTo(cx+hh*.1,b);x.lineTo(cx+hh*.01,b);x.lineTo(cx,b-hh*.4);x.lineTo(cx-hh*.01,b);x.lineTo(cx-hh*.1,b)}
+x.lineTo(cx-hh*.1,b-hh*.55);x.closePath();x.fill();x.strokeStyle='rgba(255,255,255,.55)';x.lineWidth=2;x.beginPath();x.moveTo(cx+hh*.12,b-hh*.9);x.lineTo(cx+hh*.1,b-hh*.55);x.stroke()}
+if(k==='empresas'){glow(w*.5,h*.3,520,.45);
+for(var i=0,bx=-20;bx<w;i++){var bw=60+r()*80,bh=260+r()*420;x.fillStyle='#0a0a0a';x.fillRect(bx,h-bh-120,bw,bh+120);
+for(var wy=h-bh-100;wy<h-140;wy+=26)for(var wx=bx+8;wx<bx+bw-12;wx+=18){if(r()>.55){x.fillStyle='rgba(235,235,235,'+(.3+r()*.6)+')';x.fillRect(wx,wy,9,13)}}bx+=bw+4}
+bok(18,100,500,.25,40);person(w*.36,h-40,520,false);
+x.fillStyle='#000';x.fillRect(w*.64,h-420,150,95);x.beginPath();x.arc(w*.64+150,h-372,36,0,6.283);x.fill();x.fillRect(w*.64+60,h-325,14,330);
+x.strokeStyle='#000';x.lineWidth=10;[[0,0],[-70,0],[80,0]].forEach(function(p){x.beginPath();x.moveTo(w*.64+67,h-330);x.lineTo(w*.64+67+p[0],h+20);x.stroke()})}
+else if(k==='casamento'){glow(w*.5,h*.45,480,.55);bok(36,40,420,.32,26);
+x.strokeStyle='rgba(255,255,255,.75)';x.lineWidth=26;x.beginPath();x.ellipse(w*.5,h*.62,230,380,0,Math.PI,0);x.stroke();
+for(var j=0;j<90;j++){var a=Math.PI+r()*Math.PI,ex=w*.5+Math.cos(a)*230,ey=h*.62+Math.sin(a)*380;x.fillStyle='rgba(255,255,255,'+(.3+r()*.6)+')';x.beginPath();x.arc(ex+(r()-.5)*40,ey+(r()-.5)*40,5+r()*14,0,6.283);x.fill()}
+person(w*.44,h-50,560,false);person(w*.58,h-50,520,true);
+x.strokeStyle='rgba(255,255,255,.5)';x.lineWidth=3;x.beginPath();x.moveTo(w*.58,h-50-520*.9);x.quadraticCurveTo(w*.66,h*.5,w*.7,h-60);x.stroke()}
+else if(k==='quinze'){glow(w*.5,h*.2,460,.6);bok(30,20,360,.35,36);
+x.strokeStyle='rgba(255,255,255,.8)';x.lineWidth=3;for(var c=0;c<7;c++){x.beginPath();x.moveTo(w*.5,0);x.lineTo(w*.5+(c-3)*50,150);x.stroke();x.beginPath();x.arc(w*.5+(c-3)*50,158,7,0,6.283);x.stroke()}
+person(w*.5,h-30,600,true);
+x.fillStyle='#fff';x.beginPath();var cx=w*.5,cy=h-30-600-40;x.moveTo(cx-38,cy+30);x.lineTo(cx-38,cy);x.lineTo(cx-20,cy+16);x.lineTo(cx,cy-12);x.lineTo(cx+20,cy+16);x.lineTo(cx+38,cy);x.lineTo(cx+38,cy+30);x.closePath();x.fill();
+for(var q=0;q<80;q++){x.fillStyle='rgba(255,255,255,'+(.3+r()*.6)+')';x.save();x.translate(r()*w,r()*h);x.rotate(r()*6);x.fillRect(0,0,6+r()*8,3+r()*5);x.restore()}}
+else{glow(w*.5,h*.3,520,.3);
+[[w*.3,h*.28,200],[w*.7,h*.22,170],[w*.52,h*.42,130]].forEach(function(f){for(var a=0;a<64;a++){var an=a/64*6.283,l=f[2]*(.7+r()*.4);var q=x.createLinearGradient(f[0],f[1],f[0]+Math.cos(an)*l,f[1]+Math.sin(an)*l);q.addColorStop(0,'rgba(255,255,255,.95)');q.addColorStop(1,'rgba(255,255,255,0)');x.strokeStyle=q;x.lineWidth=2.5;x.beginPath();x.moveTo(f[0],f[1]);x.lineTo(f[0]+Math.cos(an)*l,f[1]+Math.sin(an)*l);x.stroke()}});
+bok(26,300,900,.22,40);
+[[w*.36,-1],[w*.64,1]].forEach(function(p){x.save();x.translate(p[0],h-120);x.rotate(p[1]*-.22);x.fillStyle='rgba(8,8,8,1)';x.strokeStyle='rgba(255,255,255,.7)';x.lineWidth=3;x.beginPath();x.moveTo(-50,-260);x.lineTo(50,-260);x.lineTo(30,-130);x.lineTo(-30,-130);x.closePath();x.fill();x.stroke();x.fillRect(-4,-130,8,130);x.fillRect(-46,-2,92,8);x.restore()});
+for(var q2=0;q2<110;q2++){x.fillStyle='rgba(255,255,255,'+(.3+r()*.6)+')';x.save();x.translate(r()*w,r()*h);x.rotate(r()*6);x.fillRect(0,0,6+r()*9,3+r()*5);x.restore()}}
+// vinheta e grão
+var v=x.createRadialGradient(w/2,h/2,h*.25,w/2,h/2,h*.75);v.addColorStop(0,'rgba(0,0,0,0)');v.addColorStop(1,'rgba(0,0,0,.75)');x.fillStyle=v;x.fillRect(0,0,w,h);
+var im=x.getImageData(0,0,w,h),d=im.data;for(var p=0;p<d.length;p+=4){var n=(Math.random()-.5)*34;d[p]+=n;d[p+1]+=n;d[p+2]+=n}x.putImageData(im,0,0)}
+document.querySelectorAll('canvas[data-k]').forEach(paint);
+/* ===== CÂMERA DE CINEMA 3D ===== */
+(function(){
+var el=document.getElementById('stage'),R=new THREE.WebGLRenderer({antialias:true,alpha:true});
+R.setPixelRatio(Math.min(devicePixelRatio,2));R.shadowMap.enabled=true;R.shadowMap.type=THREE.PCFSoftShadowMap;
+R.toneMapping=THREE.ACESFilmicToneMapping;R.toneMappingExposure=1.1;R.outputEncoding=THREE.sRGBEncoding;el.insertBefore(R.domElement,el.firstChild);
+var S=new THREE.Scene(),C=new THREE.PerspectiveCamera(30,1,.1,100);C.position.set(0,1,16.5);C.lookAt(0,-.6,0);
+var E=new THREE.Scene();E.background=new THREE.Color(0x090909);
+function pan(w,h,x,y,z,v,rx,ry){var m=new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshBasicMaterial({color:new THREE.Color(v,v,v),side:2}));m.position.set(x,y,z);m.rotation.set(rx||0,ry||0,0);E.add(m)}
+pan(16,7,0,9,0,6,Math.PI/2,0);pan(5,13,-12,2,2,10,0,1.2);pan(5,13,12,2,4,4,0,-1.2);pan(16,5,0,2,-12,3,0,0);pan(3,10,6,1,10,7,0,2.6);
+S.environment=new THREE.PMREMGenerator(R).fromScene(E,.03).texture;
+var key=new THREE.SpotLight(0xffffff,1.8,60,.5,.6);key.position.set(6,10,9);key.castShadow=true;key.shadow.mapSize.set(1024,1024);S.add(key);
+var rim=new THREE.DirectionalLight(0xffffff,1.2);rim.position.set(-8,4,-6);S.add(rim);
+function M(c,m,r,o){var q=new THREE.MeshStandardMaterial(Object.assign({color:c,metalness:m,roughness:r},o||{}));return q}
+function T(w,h,fn){var c=document.createElement('canvas');c.width=w;c.height=h;fn(c.getContext('2d'),w,h);var t=new THREE.CanvasTexture(c);t.anisotropy=8;t.encoding=THREE.sRGBEncoding;return t}
+var brush=T(256,256,function(x,w,h){x.fillStyle='#888';x.fillRect(0,0,w,h);for(var i=0;i<900;i++){x.fillStyle='rgba('+(i%2?255:0)+','+(i%2?255:0)+','+(i%2?255:0)+',.07)';x.fillRect(0,Math.random()*h,w,1)}});
+var body=M(0x1a1b1e,.8,.4,{bumpMap:brush,bumpScale:.25}),alu=M(0xc4c6ca,1,.2,{bumpMap:brush,bumpScale:.4}),rub=M(0x060606,0,.85);
+var white=M(0xf0f0f0,0,.6);
+function lensTex(vals){return T(2048,256,function(x,w,h){x.fillStyle='#0d0d0e';x.fillRect(0,0,w,h);x.fillStyle='#e9e9e9';x.strokeStyle='#e9e9e9';x.font='700 44px Arial';x.textAlign='center';
+for(var i=0;i<160;i++){var px=i*w/160;x.fillRect(px,h*.5,3,i%8===0?70:36)}
+vals.forEach(function(v,i){var px=(i+.5)*w/vals.length;x.fillText(v,px,h*.38);x.fillStyle='#d33';x.fillRect(px-2,h*.84,4,28);x.fillStyle='#e9e9e9'})})}
+var rig=new THREE.Group();S.add(rig);rig.position.set(-1.3,.9,0);
+function add(m,x,y,z,p){m.position.set(x,y,z);m.castShadow=true;(p||rig).add(m);return m}
+function rbox(w,h,d,r,mat){var s=new THREE.Shape(),x=-w/2,y=-h/2;s.moveTo(x+r,y);s.lineTo(x+w-r,y);s.quadraticCurveTo(x+w,y,x+w,y+r);s.lineTo(x+w,y+h-r);s.quadraticCurveTo(x+w,y+h,x+w-r,y+h);s.lineTo(x+r,y+h);s.quadraticCurveTo(x,y+h,x,y+h-r);s.lineTo(x,y+r);s.quadraticCurveTo(x,y,x+r,y);
+var g=new THREE.ExtrudeGeometry(s,{depth:d,bevelEnabled:true,bevelSize:.03,bevelThickness:.03,bevelSegments:4});g.translate(0,0,-d/2);return new THREE.Mesh(g,mat)}
+function cy(a,b,h,mat,seg){var g=new THREE.CylinderGeometry(a,b,h,seg||72);g.rotateX(Math.PI/2);return new THREE.Mesh(g,mat)}
+function barrel(rad,len,tex,z){var m=cy(rad,rad,len,[M(0xffffff,.4,.5,{map:tex}),alu,alu].map(function(q){return q})[0],96);
+var g=new THREE.CylinderGeometry(rad,rad,len,96);g.rotateX(Math.PI/2);g.rotateZ(-Math.PI/2);var o=new THREE.Mesh(g,[M(0xffffff,.45,.5,{map:tex}),alu,alu]);o.position.z=z;o.castShadow=true;rig.add(o);return o}
+// corpo
+add(rbox(2.3,1.6,2.2,.2,body),0,0,0);
+for(var i=0;i<9;i++)add(new THREE.Mesh(new THREE.BoxGeometry(.04,.05,1.2),rub),-.6+i*.15,.83,-.2);
+add(rbox(.9,.5,.1,.04,body),-.3,.2,-1.15);
+add(rbox(1.5,1.15,.6,.1,rub),-.1,.05,-1.45);add(rbox(1.25,.3,.75,.06,alu),-.1,0,-1.82);
+add(rbox(1.7,.18,1.3,.05,alu),0,-.88,.1);
+// placa lateral "JM CINE"
+var plate=new THREE.Mesh(new THREE.PlaneGeometry(.95,.3),new THREE.MeshStandardMaterial({map:T(512,160,function(x,w,h){x.fillStyle='#0b0b0c';x.fillRect(0,0,w,h);x.fillStyle='#fff';x.font='700 84px Arial Narrow,Arial';x.textAlign='center';x.fillText('JM CINE',w/2,112)}),roughness:.5,metalness:.4}));
+plate.position.set(-1.17,.15,.1);plate.rotation.y=-Math.PI/2;rig.add(plate);
+// EVF
+add(rbox(.5,.5,.9,.1,body),.7,1.12,-.4);add(cy(.22,.3,.3,rub,40),.7,1.12,.2);add(cy(.2,.2,.04,new THREE.MeshStandardMaterial({color:0x0a1118,emissive:0x16263a}),32),.7,1.12,.36);
+// monitor
+add(rbox(.12,1.15,1.45,.05,body),1.3,.25,-.15);
+var sc=add(new THREE.Mesh(new THREE.PlaneGeometry(1.25,.9),new THREE.MeshStandardMaterial({color:0x080c10,emissive:0x203545,roughness:.08,metalness:.3})),1.375,.25,-.15);sc.rotation.y=Math.PI/2;
+// alça
+add(rbox(1.6,.12,.18,.04,alu),-.2,.98,.55);add(rbox(.14,.28,.16,.03,alu),-.9,.86,.55);add(rbox(.14,.28,.16,.03,alu),.5,.86,.55);
+// lente
+add(cy(.8,.8,.35,alu,72),0,0,1.3);
+barrel(.74,.75,lensTex(['∞','10','5','3','2','1.5','1.2','0.9']),1.85);
+barrel(.7,.55,lensTex(['18','24','35','50','75','100']),2.5);
+for(i=0;i<48;i++){var a=i/48*6.283,rb=new THREE.Mesh(new THREE.BoxGeometry(.035,.05,.4),rub);rb.position.set(Math.cos(a)*.745,Math.sin(a)*.745,3.0);rb.rotation.z=a;rig.add(rb)}
+add(cy(.68,.68,.12,alu,72),0,0,2.95);add(cy(.62,.62,.6,rub,72),0,0,3.25);
+var glassM=new THREE.MeshPhysicalMaterial({color:0x07101f,metalness:.1,roughness:0,clearcoat:1,envMapIntensity:3,emissive:0x000000});
+var gl=new THREE.Mesh(new THREE.CircleGeometry(.54,72),glassM);gl.position.set(0,0,3.56);rig.add(gl);
+[.38,.24].forEach(function(rd,j){var c2=new THREE.Mesh(new THREE.RingGeometry(rd-.02,rd,64),new THREE.MeshBasicMaterial({color:j?0x2a1650:0x14304f,transparent:true,opacity:.7}));c2.position.set(0,0,3.57);rig.add(c2)});
+var ir=new THREE.Mesh(new THREE.TorusGeometry(.54,.03,16,72),alu);ir.position.set(0,0,3.56);rig.add(ir);
+// matte box + abas
+var mb=new THREE.Mesh(new THREE.CylinderGeometry(.82,1.4,1.1,4,1,true),new THREE.MeshStandardMaterial({color:0x040404,roughness:.95,side:2}));mb.rotation.x=Math.PI/2;mb.rotation.y=Math.PI/4;mb.position.set(0,0,4.05);mb.castShadow=true;rig.add(mb);
+add(rbox(2.7,.05,1,.02,rub),0,1.0,4.1);add(rbox(.05,2,1,.02,rub),-1.0,0,4.1);add(rbox(.05,2,1,.02,rub),1.0,0,4.1);
+// hastes, follow focus, cabos
+add(cy(.045,.045,2.8,alu,20),-.62,-.78,2.1);add(cy(.045,.045,2.8,alu,20),.62,-.78,2.1);
+add(rbox(.3,.3,.55,.05,body),-.95,-.78,1.9);var ffw=add(cy(.34,.34,.12,alu,48),-1.0,-.78,1.9);
+var cab=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3([new THREE.Vector3(1.0,.9,-1.2),new THREE.Vector3(1.8,1.1,-1.2),new THREE.Vector3(1.9,.5,-.6),new THREE.Vector3(1.35,.2,-.5)]),40,.03,8),rub);rig.add(cab);
+var led=new THREE.Mesh(new THREE.SphereGeometry(.07,16,16),new THREE.MeshBasicMaterial({color:0xff2222}));led.position.set(-.95,.55,1.12);rig.add(led);
+// cabeça fluida + tripé
+add(rbox(1.4,.22,1.2,.06,body),0,-1.1,0);add(cy(.36,.4,.5,alu,48),0,-1.4,0);
+var arm2=add(new THREE.Mesh(new THREE.CylinderGeometry(.04,.04,2.6,14),body),1.2,-1.6,-.5);arm2.rotation.set(.3,0,-1.15);
+[[-1,-1],[1,-1],[0,1.2]].forEach(function(p){var l=new THREE.Mesh(new THREE.CylinderGeometry(.075,.05,3.3,16),alu);l.position.set(p[0]*.9,-2.75,p[1]*.85);l.rotation.z=-p[0]*.2;l.rotation.x=p[1]*.17;l.castShadow=true;rig.add(l)});
+var fl=new THREE.Mesh(new THREE.PlaneGeometry(40,40),new THREE.ShadowMaterial({opacity:.6}));fl.rotation.x=-Math.PI/2;fl.position.y=-3.7;fl.receiveShadow=true;S.add(fl);
+key.target.position.set(0,-3,0);S.add(key.target);
+// claquete
+var cl=new THREE.Group();S.add(cl);cl.position.set(4,-2.4,2.6);cl.rotation.set(-.12,-.55,.08);cl.scale.setScalar(1.25);
+add(rbox(2.6,1.7,.12,.04,M(0x0b0b0b,.2,.5)),0,0,0,cl);
+for(i=0;i<4;i++)add(new THREE.Mesh(new THREE.BoxGeometry(2.1,.03,.02),white),0,-.6+i*.4,.08,cl);
+var arm=new THREE.Group();arm.position.set(-1.3,.85,.07);cl.add(arm);
+add(rbox(2.6,.32,.12,.03,rub),1.3,.16,0,arm);
+for(i=0;i<7;i++)add(new THREE.Mesh(new THREE.BoxGeometry(.2,.32,.14),i%2?white:rub),.18+i*.37,.16,0,arm);
+for(i=0;i<7;i++)add(new THREE.Mesh(new THREE.BoxGeometry(.2,.3,.14),i%2?rub:white),-1.1+i*.37+.18,.99,0,cl);
+var pg=new THREE.BufferGeometry(),pa=[];for(i=0;i<130;i++)pa.push((Math.random()-.5)*16,(Math.random()-.3)*8,(Math.random()-.5)*8);
+pg.setAttribute('position',new THREE.Float32BufferAttribute(pa,3));S.add(new THREE.Points(pg,new THREE.PointsMaterial({color:0xffffff,size:.04,transparent:true,opacity:.35})));
+// interação
+var mx=0,my=0,drag=false,lx=0,spin=0,snap=0,acao=document.getElementById('acao'),fls=document.getElementById('flash');
+el.addEventListener('pointermove',function(e){var b=el.getBoundingClientRect();mx=(e.clientX-b.left)/b.width-.5;my=(e.clientY-b.top)/b.height-.5;if(drag){spin+=(e.clientX-lx)*.01;lx=e.clientX}});
+el.addEventListener('pointerdown',function(e){drag=true;lx=e.clientX;clap()});
+addEventListener('pointerup',function(){drag=false});
+function clap(){snap=1;[acao,fls].forEach(function(n){n.classList.remove('go');void n.offsetWidth;n.classList.add('go')})}
+function size(){var w=el.clientWidth,h=el.clientHeight;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix()}
+addEventListener('resize',size);size();
+var t0=performance.now(),calm=matchMedia('(prefers-reduced-motion:reduce)').matches,last=-1,tc=document.getElementById('tc');
+(function loop(){requestAnimationFrame(loop);
+var t=(performance.now()-t0)/1000,sy=Math.min(scrollY/innerHeight,1.2);
+rig.rotation.y=-.62+(calm?0:Math.sin(t*.45)*.22)+mx*.5+spin+sy*1.1;rig.rotation.x=my*.12;
+cl.rotation.y=-.55+mx*.3;led.visible=Math.floor(t*2)%2===0;ffw.rotation.z=t*.4;
+var open=.6;
+if(snap>0){snap-=.035;arm.rotation.z=snap>.8?open:Math.max(0,open*Math.pow(snap/.8,2))}else{arm.rotation.z=open+(calm?0:Math.sin(t*1.4)*.04)}
+var k=Math.floor(t/8);if(k!==last&&t%8>6&&!calm){last=k;clap()}
+var f=Math.floor(t*24);tc.textContent='00:00:'+('0'+Math.floor(t%60)).slice(-2)+':'+('0'+f%24).slice(-2);
+R.render(S,C)})();
+setTimeout(clap,1400);
+})();
+/* ===== interações ===== */
+var cur=document.getElementById('cur');addEventListener('pointermove',function(e){cur.style.transform='translate('+(e.clientX-17)+'px,'+(e.clientY-17)+'px)'});
+document.querySelectorAll('[data-plan]').forEach(function(a){a.addEventListener('click',function(){document.getElementById('s').value=a.dataset.plan})});
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();
+var g=function(i){return document.getElementById(i).value};
+window.open('https://wa.me/'+ZAP+'?text='+encodeURIComponent('Olá, JM Produtora! Meu nome é '+g('n')+'. Quero: '+g('s')+'. Pagamento: '+g('p')+'. '+g('m')),'_blank')});
+</script>
+</body>
+</html>
